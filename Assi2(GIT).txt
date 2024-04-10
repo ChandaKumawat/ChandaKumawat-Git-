@@ -1,0 +1,46 @@
+Q1----
+Answer:-The steps involved in creating a new branch and pushing changes in the Forking workflow:
+
+1. *Fork the Repository*: Go to the original repository on a platform like GitHub and click on the "Fork" button to create a copy of the repository under your GitHub account.
+
+2. *Clone the Forked Repository*: Clone the forked repository to your local machine using the git clone command followed by the URL of your forked repository.
+
+3. *Create a New Branch*: Use the git checkout -b branch-name command to create a new branch where you will make your changes. Replace "branch-name" with a descriptive name for your branch.
+
+4. *Make Changes*: Make the necessary changes to the code, documentation, or any other files in your local branch.
+
+5. *Stage and Commit Changes*: Use the git add command to stage the changes you want to commit, followed by git commit -m "commit message" to commit the changes to your local repository. Replace "commit message" with a brief description of your changes.
+
+6. *Push Changes to Your Fork*: Use the git push origin branch-name command to push your local branch and changes to your forked repository on GitHub. This will make your changes available remotely.
+
+7. *Create a Pull Request*: Go to your forked repository on GitHub and switch to the branch you just pushed. Click on the "New pull request" button, review your changes, and then click "Create pull request" to submit your changes to the original repository.
+
+8. *Review and Merge*: Wait for the maintainers of the original repository to review your pull request. Once approved, your changes will be merged into the main branch of the original repository.
+
+9. *Sync Fork with Original Repository (Optional)*: To keep your fork up-to-date with the original repository, you can add the original repository as a remote and fetch its changes using git fetch upstream followed by git merge upstream/main or git rebase upstream/main.
+
+You've successfully created a new branch, made changes, and pushed them using the Forking workflow.
+
+Q2---
+Answer:-Feature branches in Git are separate branches created to work on a specific feature or issue. They allow developers to work on new features or bug fixes without affecting the main codebase. Feature branches are useful for development teams because they enable parallel development, easier collaboration, isolation of changes, and the ability to review and test changes before merging them into the main codebase. 
+
+Syntax for creating a new feature branch in Git:
+
+git checkout -b <branch_name>
+
+This command creates a new branch named <branch_name> and switches to it, allowing you to start working on your feature or issue.
+
+Q3---
+Answer:-Release branching strategy is typically employed in software development when preparing to release a new version of a product or software. It involves creating a separate branch from the main development branch (usually called the "master" or "main" branch) to isolate the code intended for the release. This allows developers to continue working on new features or bug fixes in the main branch without affecting the stability of the release.
+
+The benefits of release branching strategy include:
+
+1. *Isolation*: It isolates the code intended for release, allowing developers to focus on stabilizing it without interference from ongoing development work.
+
+2. *Stability*: It ensures that the code in the release branch is stable and thoroughly tested before being deployed to production.
+
+3. *Parallel Development*: It allows parallel development to continue in the main branch, enabling developers to work on new features or bug fixes without delaying the release process.
+
+4. *Hotfixes*: It provides a dedicated branch for addressing critical issues or bugs found in the released version, known as hotfixes, without disrupting ongoing development work.
+
+Overall, the release branching strategy helps streamline the release process, maintain code quality, and ensure a smooth transition from development to production.
